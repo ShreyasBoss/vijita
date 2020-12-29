@@ -1,46 +1,4 @@
 
-
-// var canvas = document.getElementById('myCanvas');
-//       var ctx = canvas.getContext('2d');
-
-      
-     
-
-//        function handleOnchange(event){
-//         var unit = $(".col-md-6:first-child").width();
-//         console.log(unit)
-//         if (event.target.files && event.target.files[0]) {
-//           let reader = new FileReader();
-//           reader.onload = (e) => {
-           
-     
-          
-//             var imageObj1 = new Image(); 
-//             var imageObj2 = new Image(); 
-            
-//            imageObj2.src =  e.target.result; 
-//            console.log(e.target.result)
-//             imageObj2.onload = function() { 
-               
-//               ctx.drawImage(imageObj2, 100, 0,200,200); 
-              
-//           }
-//         //   imageObj1.src = './asset/yb.png'; 
-//         //     imageObj1.onload = function() { 
-//         //         canvas.width = imageObj1.naturalWidth
-//         //         canvas.height = imageObj1.naturalHeight
-//         //        ctx.drawImage(imageObj1, 0, 0); 
-              
-//         //     }
-           
-//         //   };
-//           reader.readAsDataURL(event.target.files[0]);
-//         }
-       
-      
-//       }
-
-//     }
    
 var imageLoader = document.getElementById('imageLoader');
     imageLoader.addEventListener('change', handleImage, false);
@@ -76,27 +34,27 @@ function updateimage()
 	var img1 = document.getElementById('img4');
 	 
 	 
-   	canvas.width = 4200;
-   	canvas.height = 2400;
+   	canvas.width = 4201;
+   	canvas.height = 2401;
    	var userw = image.width;
    	var userh = image.height;
    	var imagex=300;
-   	var imagey=1360
+   	var imagey=670;
    	if(image.width!=760)
    	{
-   		var xper=(760*100)/image.width;
+   		var xper=(1090*100)/image.width;
    		userw=image.width*xper/100;
    		userh=image.height*xper/100;
 
    		var padd=0;
-       	if(userh>760)
+       	if(userh>1090)
    		{
-   			padd=(userh-760)/2
+   			padd=(userh-1090)/2
    			imagey=imagey-padd
    		}
-   		if(userh<760)
+   		if(userh<1090)
    		{
-   			padd=(760-userh)/2
+   			padd=(1090-userh)/2
    			imagey=imagey+padd
    		}
    	}
@@ -106,7 +64,7 @@ function updateimage()
    	
    	var ctx = canvas.getContext('2d');
    	ctx.drawImage(image, imagex,imagey,userw, userh); 
-	   ctx.drawImage(img1, 0, 0,4200,2400);
+	   ctx.drawImage(img1, 0, 0,4201,2401);
 	   img1.style="display:none;"
 	   btncan.style="display:block;"
 }
