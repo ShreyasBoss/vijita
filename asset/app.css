@@ -40,8 +40,8 @@
 body{
   
 font-family: muktaB;
-    background: #780206;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
+    background: #780206;  
+    background: -webkit-linear-gradient(to right, #061161, #780206); 
     background: linear-gradient(to right, #061161, #780206);
     
 
