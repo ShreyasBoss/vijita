@@ -5,6 +5,7 @@ var imageLoader = document.getElementById('imageLoader');
 var canvas = document.getElementById('canvas');
 var btncan = document.getElementById('btncan');
 var can = document.getElementById('can');
+var bgimg = document.getElementById('img');
 var image = new Image();
 
 
@@ -66,6 +67,7 @@ function updateimage()
    	ctx.drawImage(image, imagex,imagey,userw, userh); 
 	   ctx.drawImage(img1, 0, 0,4201,2401);
 	   img1.style="display:none;"
+	   bgimg.style="display:none;"
 	   btncan.style="display:block;"
 }
 btncan.addEventListener("click",()=>{

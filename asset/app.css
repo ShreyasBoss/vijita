@@ -1,7 +1,45 @@
 *{margin:0;padding:0;}
-body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 
+@font-face {
+  font-family: s0715;
+  src: url('./S0715892.TTF');
+}
+@font-face {
+  font-family:s231;
+  src: url('./S2317892.TTF');
+}
+@font-face {
+  font-family: mukta;
+  src: url('./Mukta/Mukta-Regular.ttf');
+}
+@font-face {
+  font-family: baloo2;
+  src: url('./Baloo_2/Baloo2-Regular.ttf');
+}
+@font-face {
+  font-family: khand;
+  src: url('./Khand/Khand-Medium.ttf');
+}
+
+
+
+@font-face {
+  font-family: muktaB;
+  src: url('./Mukta/Mukta-Bold.ttf');
+}
+@font-face {
+  font-family: baloo2B;
+  src: url('./Baloo_2/Baloo2-Bold.ttf');
+}
+@font-face {
+  font-family: khandB;
+  src: url('./Khand/Khand-Bold.ttf');
+}
+
+
+body{
+  
+font-family: muktaB;
     background: #780206;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #061161, #780206);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #061161, #780206);
@@ -46,8 +84,8 @@ canvas {
     color: white;
   }
   
-  .fa-google {
-    background: #dd4b39;
+  .fa-whatsapp {
+    background: #25D366;
     color: white;
   }
   footer{
